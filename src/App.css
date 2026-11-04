@@ -1,0 +1,26 @@
+/* Container layout settings */
+.portfolio-wrapper {
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px; /* Prevents navbar from hiding top content */
+  padding-bottom: 40px; /* Ensures bottom of book remains visible */
+  box-sizing: border-box;
+}
+
+.book-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fix for individual book page content overflow */
+.page {
+  padding: 25px;
+  background-color: #141414;
+  color: #ffffff;
+  box-sizing: border-box;
+  overflow-y: auto; /* Enables scrolling inside page if content exceeds height */
+}
