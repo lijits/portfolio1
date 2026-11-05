@@ -1,9 +1,6 @@
 import React from 'react';
 
 const ProjectsPage = React.forwardRef((props, ref) => {
-  // Your GitHub username base URL
-  const githubBase = "https://github.com/";
-
   const projects = [
     {
       id: "01",
@@ -11,7 +8,7 @@ const ProjectsPage = React.forwardRef((props, ref) => {
       category: "FULL-STACK MERN PROJECT",
       description: "Interactive Flashcards, Quiz & Deck Manager with card flipping, search, category filtering, and MongoDB backend integration.",
       tech: ["React.js", "Node.js", "Express", "MongoDB"],
-      repo: "lijits/studyhub"
+      liveDemo: "https://studyhub-liji.netlify.app"
     },
     {
       id: "02",
@@ -19,7 +16,7 @@ const ProjectsPage = React.forwardRef((props, ref) => {
       category: "FULL-STACK MERN E-COMMERCE",
       description: "Sustainable eco-friendly product store with product catalogs, Eco-Score ratings, shopping cart management, JWT authentication, and admin dashboard.",
       tech: ["React.js", "Node.js", "Express", "MongoDB"],
-      repo: "lijits/greencart"
+      liveDemo: "https://greencart-liji.netlify.app"
     },
     {
       id: "03",
@@ -27,15 +24,15 @@ const ProjectsPage = React.forwardRef((props, ref) => {
       category: "E-COMMERCE UI",
       description: "Luxury jewelry e-commerce website featuring product showcase galleries, category sections, ticker banners, and custom styling.",
       tech: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
-      repo: "lijits/slfprjct"
+      liveDemo: "https://jophio-jewellers-liji.netlify.app"
     },
     {
       id: "04",
-      title: "Restaurant Website",
+      title: "Savoria (Restaurant Website)",
       category: "FRONT-END UI",
       description: "Mobile-responsive restaurant web application featuring menu sections, popular dishes, location details, and Tailwind CSS styling.",
       tech: ["React.js", "Tailwind CSS", "JavaScript"],
-      repo: "lijits/restaurant-website"
+      liveDemo: "https://savoria-liji.netlify.app"
     }
   ];
 
@@ -64,13 +61,13 @@ const ProjectsPage = React.forwardRef((props, ref) => {
                 {index + 1}. {project.title}
               </h3>
               <a 
-                href={`${githubBase}${project.repo}`} 
+                href={project.liveDemo} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={{ 
                   fontSize: '12px', 
-                  color: '#4f46e5', 
-                  background: 'rgba(79, 70, 229, 0.1)', 
+                  color: '#10b981', 
+                  background: 'rgba(16, 185, 129, 0.1)', 
                   padding: '6px 12px', 
                   borderRadius: '4px', 
                   textDecoration: 'none',
@@ -78,7 +75,7 @@ const ProjectsPage = React.forwardRef((props, ref) => {
                   marginLeft: 'auto'
                 }}
               >
-                GitHub →
+                Live Demo ↗
               </a>
             </div>
 
