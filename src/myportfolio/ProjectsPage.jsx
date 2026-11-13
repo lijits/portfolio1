@@ -8,7 +8,7 @@ const ProjectsPage = React.forwardRef((props, ref) => {
       category: "FULL-STACK MERN PROJECT",
       description: "Interactive Flashcards, Quiz & Deck Manager with card flipping, search, category filtering, and MongoDB backend integration.",
       tech: ["React.js", "Node.js", "Express", "MongoDB"],
-      liveDemo: "https://studyhub-liji.netlify.app"
+      github: "https://github.com/lijits/studyhub"
     },
     {
       id: "02",
@@ -16,7 +16,7 @@ const ProjectsPage = React.forwardRef((props, ref) => {
       category: "FULL-STACK MERN E-COMMERCE",
       description: "Sustainable eco-friendly product store with product catalogs, Eco-Score ratings, shopping cart management, JWT authentication, and admin dashboard.",
       tech: ["React.js", "Node.js", "Express", "MongoDB"],
-      liveDemo: "https://greencart-liji.netlify.app"
+      github: "https://github.com/lijits/greencart"
     },
     {
       id: "03",
@@ -24,7 +24,7 @@ const ProjectsPage = React.forwardRef((props, ref) => {
       category: "E-COMMERCE UI",
       description: "Luxury jewelry e-commerce website featuring product showcase galleries, category sections, ticker banners, and custom styling.",
       tech: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
-      liveDemo: "https://jophio-jewellers-liji.netlify.app"
+      github: "https://github.com/lijits/slfprjct" // Update this if your repository name differs
     },
     {
       id: "04",
@@ -32,7 +32,7 @@ const ProjectsPage = React.forwardRef((props, ref) => {
       category: "FRONT-END UI",
       description: "Mobile-responsive restaurant web application featuring menu sections, popular dishes, location details, and Tailwind CSS styling.",
       tech: ["React.js", "Tailwind CSS", "JavaScript"],
-      liveDemo: "https://savoria-liji.netlify.app"
+      github: "https://github.com/lijits/restaurant-website"
     }
   ];
 
@@ -61,13 +61,13 @@ const ProjectsPage = React.forwardRef((props, ref) => {
                 {index + 1}. {project.title}
               </h3>
               <a 
-                href={project.liveDemo} 
+                href={project.github} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={{ 
                   fontSize: '12px', 
-                  color: '#10b981', 
-                  background: 'rgba(16, 185, 129, 0.1)', 
+                  color: '#38bdf8', 
+                  background: 'rgba(56, 189, 248, 0.1)', 
                   padding: '6px 12px', 
                   borderRadius: '4px', 
                   textDecoration: 'none',
@@ -75,7 +75,7 @@ const ProjectsPage = React.forwardRef((props, ref) => {
                   marginLeft: 'auto'
                 }}
               >
-                Live Demo ↗
+                GitHub ↗
               </a>
             </div>
 

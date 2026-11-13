@@ -1,12 +1,10 @@
-/* Container layout settings */
+/* Change layout direction from row to column */
 .portfolio-wrapper {
-  min-height: 100vh;
-  background-color: #0d0d0d;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Stacks Navbar on top of the main card */
   align-items: center;
-  padding-top: 90px; /* Prevents navbar from hiding top content */
-  padding-bottom: 40px; /* Ensures bottom of book remains visible */
+  width: 100%;
+  min-height: 100vh;
   box-sizing: border-box;
 }
 

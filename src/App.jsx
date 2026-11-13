@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import HTMLFlipBook from 'react-pageflip';
 
-import Navbar from './myportfolio/Navbar';
+import PortfolioHeader from './myportfolio/Navbar'; // Or adjust to your Navbar/Header component path
 import CoverPage from './myportfolio/CoverPage';
 import ProfilePage from './myportfolio/ProfilePage';
 import HobbiesPage from './myportfolio/HobbiesPage';
@@ -13,13 +13,15 @@ import BackCoverPage from './myportfolio/BackCoverPage';
 
 import './App.css';
 
-function App() {
+export default function App() {
   const bookRef = useRef(null);
 
   return (
     <div className="portfolio-wrapper">
-      <Navbar bookRef={bookRef} />
+      {/* 1. Mobile-responsive portfolio header/navbar with bookRef support */}
+      <PortfolioHeader bookRef={bookRef} />
 
+      {/* 2. Flipbook container */}
       <div className="book-container">
         <HTMLFlipBook
           width={480}
@@ -34,12 +36,12 @@ function App() {
           mobileScrollSupport={true}
           ref={bookRef}
         >
-          {/* Page Index 0 */}
+          {/* Page Index 0: Cover */}
           <div className="page">
             <CoverPage />
           </div>
 
-          {/* Page Index 1 */}
+          {/* Page Index 1: Profile / About */}
           <div className="page">
             <ProfilePage />
           </div>
@@ -49,7 +51,7 @@ function App() {
             <HobbiesPage />
           </div>
 
-          {/* Page Index 3 */}
+          {/* Page Index 3: Skills */}
           <div className="page">
             <SkillsPage />
           </div>
@@ -69,7 +71,7 @@ function App() {
             <ContactPage />
           </div>
 
-          {/* Page Index 7 */}
+          {/* Page Index 7: Back Cover */}
           <div className="page">
             <BackCoverPage />
           </div>
@@ -78,5 +80,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
