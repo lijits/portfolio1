@@ -1,16 +1,43 @@
-# React + Vite
+# Portfolio | Liji T.S 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A professional personal portfolio web application built with React, showcasing my full-stack web development projects, technical skills, and background in modern web technologies.
 
-Currently, two official plugins are available:
+## ✨ Features
+- **Modern & Responsive Design:** Clean layout optimized for seamless viewing across all devices and screen sizes.
+- **Project Showcase:** Highlights key applications with direct links to live deployments and GitHub repositories.
+- **Skills Overview:** Clear breakdown of core technologies, tools, and frameworks in my development stack.
+- **Professional Contact Section:** Easy access to my professional profiles, email, and social links.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technologies Used
+- **React.js** – Component-based front-end architecture
+- **JavaScript (ES6+)** – Interactive features and state management
+- **CSS3 / Tailwind CSS** – Custom styling and responsive design
+- **Vite** – Fast development environment and build tool
 
-## React Compiler
+## 🚀 How to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/lijits/portfolio1.git
+   ```
+   2.Navigate into the project folder:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ ```Bash
+cd portfolio1
+ ```
+3.Install dependencies:
 
-## Expanding the Oxlint configuration
+ ```Bash
+npm install
+ ```
+4.Start the development server:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+ ```Bash
+npm run dev
+ ```
+ ##🌐 Live Demo
+ https://liji-ts-portfolio.netlify.app
+
+##👩‍💻 Author
+Liji T.S
+
+GitHub: [@lijits](https://github.com/lijits)
